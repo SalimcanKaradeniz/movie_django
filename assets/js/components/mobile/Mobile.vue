@@ -1,5 +1,8 @@
 <template>
-    
+    <div id="app">
+        <div>oguzhan</div>
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
