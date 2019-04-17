@@ -3,34 +3,12 @@
         <div class="wrap-sticky" style="height: 93px">
             <nav class="navbar navbar-default bootsnav navbar-sticky on no-full">
                 <div class="container">
-                    <div class="attr-nav">
-                        <ul>
-                            <li class="search">
-                                <a>search</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="navbar-header">
-                        <a class="navbar-brand">
-                            <img src="http://movie.themepul.com/images/logo3.png" class="logo" alt="logo">
-                        </a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-menu">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li>
-                                <a>event</a>
-                            </li>
-                            <li>
-                                <a>event</a>
-                            </li>
-                            <li>
-                                <a>event</a>
-                            </li>
-                            <li>
-                                <a>event</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <!--search-->
+                    <Search></Search>
+                    <!--logo-->
+                    <Logo></Logo>
+                    <!--navbar-->
+                    <Navbar></Navbar>
                 </div>
             </nav>
         </div>
@@ -38,8 +16,12 @@
 </template>
 
 <script>
+    import Search from "./HeaderSearch.vue"
+    import Logo from "./HeaderLogo.vue"
+    import Navbar from "./HeaderNavbar.vue"
     export default {
-        name: "Header"
+        name: "Header",
+        components: {Search, Logo, Navbar}
     }
 </script>
 
