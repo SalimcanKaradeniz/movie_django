@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+{% load render_bundle from webpack_loader %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DESKTOP</title>
+    <title>Desktop</title>
 </head>
 <body>
-
+    <div id="app">
+    </div>
+    {% render_bundle 'desktop' %}
 </body>
 </html>
