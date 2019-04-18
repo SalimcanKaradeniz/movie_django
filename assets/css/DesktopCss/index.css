@@ -3,7 +3,7 @@
 }
 
 html, body {
-    font-family: 'roboto', sans-serif;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     width: 100%;
@@ -164,7 +164,7 @@ img {
 }
 
 nav.navbar.bootsnav ul.nav > li > a {
-    font-size: 18px;
+    font-size: 13px;
     color: #ffffff;
     font-weight: bold;
     text-transform: capitalize;
@@ -177,11 +177,114 @@ nav.navbar.bootsnav ul.nav > li > a {
 }
 
 nav.navbar.bootsnav ul.nav > li.selected > a {
-    color: #ff1744!important;
+    color: #ff1744 !important;
 }
 
 nav.navbar.bootsnav ul.nav > li > a:hover {
     color: #ff1744;
+}
+
+.slider-2.bs-slider {
+    overflow: hidden;
+    max-height: 100%;
+    position: relative;
+}
+
+.slider-items {
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-section.fade {
+    opacity: 1;
+}
+
+.slider-section.fade .item {
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    left: 0 !important;
+    display: block !important;
+}
+
+.slider-section.fade .item:first-child {
+    top: auto;
+    position: relative;
+}
+
+.slider-section.fade {
+    opacity: 1;
+}
+
+.slider-section.fade .item:first-child {
+    top: auto;
+    position: relative;
+}
+
+
+.slider-2 .slider-img {
+    position: relative;
+    z-index: -1;
+}
+
+.slider-content {
+    min-height: 13.2vw;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.slider-content h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.slider-content .button-layer {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    background: rgba(6,15,25,0.6);
+    display: inline-block;
+    color: #ffffff;
+    transition: 500ms;
+}
+
+.button-layer .button-icon {
+    width: 30px;
+    margin: auto;
+}
+
+.button-layer .button-text {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.slider-content .button-layer:hover{
+    box-shadow: 1px 1px 1px black;
+}
+
+.slider-content .button-layer:active {
+    padding: 9px;
+    box-shadow: none;
+}
+
+.slider-content .slider-description {
+    width: 500px;
+}
+
+.slider-description p {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 20px;
 }
 
 /* beafore after */

@@ -3,8 +3,6 @@
         <div class="wrap-sticky" style="height: 93px">
             <nav class="navbar navbar-default bootsnav navbar-sticky on no-full">
                 <div class="container">
-                    <!--search-->
-                    <Search></Search>
                     <!--logo-->
                     <Logo></Logo>
                     <!--navbar-->
@@ -16,12 +14,11 @@
 </template>
 
 <script>
-    import Search from "./HeaderSearch.vue"
     import Logo from "./HeaderLogo.vue"
     import Navbar from "./HeaderNavbar.vue"
     export default {
         name: "Header",
-        components: {Search, Logo, Navbar}
+        components: {Logo, Navbar}
     }
 </script>
 
