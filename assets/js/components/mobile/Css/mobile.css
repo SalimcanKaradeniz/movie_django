@@ -1,0 +1,142 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    margin: 0;
+    font-weight: 700;
+    padding: 0;
+    background: #071310 url(/static/js/components/mobile/mobil-Img/aqua-background-img.jpg) no-repeat center top fixed;
+    height: 100% !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.mobile-container {
+    margin: auto;
+    color: white;
+    border-top: 5px solid #245444;
+}
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: #204c3e;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:active {
+    background-color: #05a981;
+    color: black;
+}
+
+.headerimg {
+    width: 100px;
+    height: 34px;
+    margin-top: 6px;
+    margin-left: 11px;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    margin-top: 7px;
+    margin-right: 13px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #f1d8d8;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.sidenav {
+    height: 100%;
+    width: 122px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    background: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.mobile-container a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 12px;
+}
