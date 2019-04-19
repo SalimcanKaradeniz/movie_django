@@ -1,7 +1,5 @@
 <template>
-    <li>
-        <a>{{name}}</a>
-    </li>
+    <li>{{name}}</li>
 </template>
 
 <script>
