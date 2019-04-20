@@ -1,16 +1,18 @@
 <template>
     <div id="app">
-        <Header></Header>
+        <homeheader></homeheader>
         <router-view></router-view>
+        <Footer></Footer>
     </div>
 </template>
 
 <script>
-    import Header from "./body/Header.vue";
-    // import Footer from "./body/Footer.vue";
+    import homeheader from "./body/homeheader.vue";
+    import Footer from "./body/Footer.vue";
+
     export default {
         name: "Mobile",
-        components: {Header}
+        components: {Footer, homeheader},
     }
 </script>
 

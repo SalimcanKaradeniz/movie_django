@@ -1,10 +1,9 @@
 <template>
     <div>
         <div class="mobile-container">
-            <img class="headerimg" src="/static/js/components/mobile/mobil-Img/net2.png">
-            <a class="active" href="#home">Home</a>
-            <a href="#news">Info</a>
-            <a href="#contact">Contact</a>
+            <img class="headerimg" src="/static/js/components/mobile/mobil-Img/anasayfaImg/net2.png">
+            <a class="active" href="/">Anasayfa</a>
+            <a href="#">İletişim</a>
             <div class="sidenav" v-if="toggleIcon">
                 <a href="#">Home</a>
                 <a href="#">Tv shows</a>
@@ -22,7 +21,7 @@
 
 <script>
     export default {
-        name: "Header",
+        name: "v-header",
         data: function () {
             return {
                 toggleIcon: false
@@ -32,4 +31,5 @@
 </script>
 
 <style>
+</style>
 </style>
