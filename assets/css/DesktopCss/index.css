@@ -204,15 +204,264 @@ a {
     border-radius: 50%;
     padding: 25px;
     cursor: pointer;
+    opacity: .7;
 }
 
 .play-button:hover {
-    background: #0d1734;
-    box-shadow: 2px 2px 2px 2px rgba(217, 85, 98, 0.40);
+    opacity: .9;
 }
 
 .play-button .button-icon img {
     width: 30px;
     height: 30px;
     margin-left: 10px;
+}
+
+.discover {
+    width: 100%;
+    position: relative;
+    background: #0b1022;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.discover .discover-top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-flex;
+    width: 100%;
+    background: #0d1734;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.discover .discover-top .header-left {
+    float: left;
+    width: 50%;
+}
+
+.header-left .discover-header {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 50px;
+}
+
+.discover .discover-top .header-right {
+    float: right;
+    width: 50%;
+}
+
+.header-right .discover-category {
+    float: right;
+    padding-right: 150px;
+    padding-left: 50px;
+    border-left: 1px solid #cccccc;
+    height: 50px;
+}
+
+.drop {
+    width: 150px;
+    height: 50px;
+    background: black;
+    opacity: .5;
+    padding: 15px 33px 15px 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.drop .drop-icon img {
+    width: 20px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+.drop-items {
+    background: black;
+    position: absolute;
+    width: 150px;
+    z-index: 999;
+    opacity: .5;
+}
+
+.drop-items ul li {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.drop-items ul li:hover {
+    opacity: .5;
+}
+
+.VueCarousel {
+    width: 90%;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filmimg {
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.filmimg:hover {
+    transform: scale(1.2);
+    margin-left: 30px;
+    margin-right: 50px;
+    animation-name: filmWidth;
+    animation-duration: 1s;
+    filter: drop-shadow(1px 1px 2px #d95562) opacity(40%);
+    background: #0d1734;
+    position: relative;
+}
+
+.VueCarousel-wrapper {
+    height: 300px;
+}
+
+.VueCarousel-inner {
+    margin-top: 50px;
+}
+
+.VueCarousel-slide {
+    position: relative!important;
+}
+
+.VueCarousel-slide:nth-child(5) .filmimg:hover {
+    padding-right: 25px;
+    background: transparent;
+}
+
+.VueCarousel-slide:nth-child(10) .filmimg:hover {
+    padding-right: 25px;
+    background: transparent;
+}
+
+.VueCarousel-slide:nth-child(15) .filmimg:hover {
+    padding-right: 25px;
+    background: transparent;
+}
+
+@keyframes filmWidth {
+    from {
+        transform: scale(1);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    to {
+        transform: scale(1.2);
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+}
+
+
+.VueCarousel-navigation-prev {
+    background: url("/static/images/DesktopImages/left.png");
+    padding: 17px !important;
+    cursor: pointer;
+}
+
+.VueCarousel-navigation-next {
+    background: url("/static/images/DesktopImages/right.png");
+    padding: 17px !important;
+    cursor: pointer;
+}
+
+.VueCarousel-navigation-button {
+    color: transparent!important;
+}
+
+.discover-container .category-name {
+    position: absolute;
+    left: 110px;
+    z-index: 999;
+}
+
+.discover-container .category-name span.category-text {
+    font-size: 20px;
+    float: left;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+.discover-container .category-name span.hide-next {
+    display: none;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 18px;
+    animation-name: example;
+    animation-duration: 1s;
+    font-size: 13px;
+}
+
+@keyframes example {
+    from {
+        margin-left: 80px;
+    }
+    to {
+        margin-left: 90px;
+    }
+}
+
+.discover-container .category-name span:hover + span.hide-next {
+    display: block;
+    color: white;
+}
+
+.filmimg-container {
+    display: none;
+    top: 70px;
+    position: absolute;
+    z-index: 999;
+    padding: 20px;
+    text-shadow: 5px 5px 5px #000;
+    pointer-events: none;
+}
+
+
+.filmimg-container .discover-detail-top {
+    display: inline-flex;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+.filmimg-container .discover-detail-top .discover-icon {
+    padding-right: 20px;
+}
+
+.filmimg-container .discover-detail-top .discover-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.filmimg:hover + .filmimg-container {
+    display: block;
+    z-index: 999;
+    position: absolute;
+}
+
+.filmimg-container .discover-detail-top .discover-minute {
+    margin-top: 10px;
+}
+
+.filmimg-container .discover-detail-body {
+    margin-bottom: 10px;
+}
+
+.filmimg-container .discover-detail-body .discover-filmname {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.filmimg-container .discover-detail-bottom span span.circle img {
+    width: 10px;
+    height: 10px;
+}
+
+.filmimg-container .discover-detail-bottom span:last-child span.circle {
+    display: none;
 }
