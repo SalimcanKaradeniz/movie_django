@@ -327,20 +327,20 @@ a {
 }
 
 .VueCarousel-slide {
-    position: relative!important;
+    position: relative !important;
 }
 
-.VueCarousel-slide:nth-child(5) .filmimg:hover {
+.discover .VueCarousel-slide:nth-child(5) .filmimg:hover {
     padding-right: 25px;
     background: transparent;
 }
 
-.VueCarousel-slide:nth-child(10) .filmimg:hover {
+.discover .VueCarousel-slide:nth-child(10) .filmimg:hover {
     padding-right: 25px;
     background: transparent;
 }
 
-.VueCarousel-slide:nth-child(15) .filmimg:hover {
+.discover .VueCarousel-slide:nth-child(15) .filmimg:hover {
     padding-right: 25px;
     background: transparent;
 }
@@ -372,7 +372,7 @@ a {
 }
 
 .VueCarousel-navigation-button {
-    color: transparent!important;
+    color: transparent !important;
 }
 
 .discover-container .category-name {
@@ -464,4 +464,328 @@ a {
 
 .filmimg-container .discover-detail-bottom span:last-child span.circle {
     display: none;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    color: tomato;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2196f3;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #F5F5F5;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+
+.film_page .header {
+    padding: 20px 0 0 0;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+.film_page .header h2 {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 0.2em;
+}
+
+.film_page .header p {
+    font-size: 14px;
+}
+
+.rating {
+    float: left;
+    margin-left: 150px;
+}
+
+.user-star-rating {
+    padding-left: 135px;
+}
+
+.film-top {
+    display: inline-block;
+}
+
+.film_page .film-content {
+    margin-top: 20px;
+    background: #0b1022;
+    padding: 50px;
+    color: white;
+    display: flex;
+}
+
+.film_page .content-left {
+    width: 40%;
+    float: left;
+}
+
+.single-content.video {
+    margin-top: 10px;
+}
+
+.single-content {
+    float: left;
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.action-buttons {
+    margin-bottom: 10px;
+}
+
+.clearfix {
+    display: block;
+}
+
+#action-parts, #action-addto, #action-share, #action-report {
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin-right: 4px;
+}
+
+.old-part-system {
+    max-width: 60%;
+}
+
+.align-right {
+    float: right;
+}
+
+.film_page .button {
+    background: linear-gradient(to bottom, #262727, #252525 100%);
+    border: 0;
+    border-radius: 2px;
+    padding: 8px 14px;
+    color: #DEDEDE;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03), inset 0 3px 2px rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+    height: 33px;
+    outline: none;
+}
+
+.single-content.video .video-content {
+    display: block;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.autosize-container {
+    position: relative;
+    padding: 10px 10px 44.25%;
+    height: 0;
+    height: auto;
+    max-height: 400px;
+    background: #242424;
+    color: #ccc;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 100px 30px inset;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.autosize-container p {
+    text-indent: -9999px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: transparent;
+}
+
+.autosize-container iframe, .autosize-container object, .autosize-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 3;
+}
+
+.content-right {
+    float: right;
+    overflow: hidden;
+    width: 60%;
+}
+
+.content-right .VueCarousel {
+    margin-left: 50px !important;
+}
+
+.film_page .VueCarousel-slide:nth-child(3) .filmimg:hover {
+    padding-right: 35px;
+    background: transparent;
+}
+
+.film_page .VueCarousel-slide:nth-child(6) .filmimg:hover {
+    padding-right: 35px;
+    background: transparent;
+}
+
+.film_page .VueCarousel-slide:nth-child(9) .filmimg:hover {
+    padding-right: 35px;
+    background: transparent;
+}
+
+.film_page .VueCarousel-slide:nth-child(10) .filmimg:hover {
+    padding-right: 35px;
+    background: transparent;
+}
+
+.right-comments {
+    float: right;
+    width: 50%;
+}
+
+.comments {
+    margin: 25px auto;
+    padding: 0px 10px 0px 50px;
+    border-left: 2px solid #34495e;
+}
+
+.comments p {
+    padding: 20px;
+    background: #34495e;
+    color: #ecf0f1;
+    font-family: tahoma;
+    line-height: 1.7;
+    position: relative;
+}
+
+.comments p > span {
+    display: block;
+    padding: 5px 5px 10px 5px;
+    color: #7f8c8d;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.comments p > button {
+    background: #2ecc71;
+    color: #fff;
+    width: 100px;
+    padding: 10px;
+    border-radius: 2px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.comments p:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2ecc71;
+    top: -9px;
+    left: -61px;
+    position: absolute;
+}
+
+.comments p:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #34495e #34495e transparent transparent;
+    border-width: 15px;
+    position: absolute;
+    top: 0px;
+    left: -29px;
+}
+
+.left-comments {
+    float: left;
+    width: 45%;
+}
+
+.feedback-input {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #34495e;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #2ecc71;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 50%;
+    background: #34495e;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 500;
+    float: right;
+}
+
+[type="submit"]:hover {
+    background: #2ecc71;
+}
+
+.film_page form {
+    width: 500px;
+    margin: auto;
 }

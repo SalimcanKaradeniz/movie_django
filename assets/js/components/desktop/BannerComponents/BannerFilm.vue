@@ -4,7 +4,7 @@
             <img src="https://www.filmiifullizle.com/uploads/film/2018/03/olduren-tutku-passion-2012-turkce-dublaj-izle-935.jpg"
                  alt="">
             <!--button-->
-            <Button></Button>
+            <Button v-if="$route.fullPath === '/'"></Button>
             <!--detail-->
             <Detail></Detail>
         </div>
