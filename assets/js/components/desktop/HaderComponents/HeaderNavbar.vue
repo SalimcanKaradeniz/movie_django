@@ -1,23 +1,23 @@
 <template>
-    <div class="collapse navbar-collapse" id="navbar-menu">
-        <ul class="nav navbar-nav navbar-left">
-            <Item name="Anasayfa" :class="$route.fullPath === '/' ? 'selected' : ''"></Item>
-            <Item name="Filmler"></Item>
-            <Item name="Diziler"></Item>
-            <Item name="Son Eklenenler"></Item>
-            <Item name="Çok Yakında"></Item>
-            <Item name="Listem"></Item>
+    <div class="navbar">
+        <ul class="navbar-brand">
+            <NavbarItem name="Home" :class="$route.fullPath === '/' ? 'active' : ''"></NavbarItem>
+            <NavbarItem name="About"></NavbarItem>
+            <NavbarItem name="News"></NavbarItem>
+            <NavbarItem name="Discover"></NavbarItem>
+            <NavbarItem name="Community"></NavbarItem>
         </ul>
     </div>
 </template>
 
 <script>
-    import Item from "./HeaderNavbarItem.vue"
+    import NavbarItem from "./HeaderNavbarItem.vue"
     export default {
         name: "HeaderNavbar",
-        components: {Item}
+        components: {NavbarItem}
     }
 </script>
 
 <style scoped>
+
 </style>

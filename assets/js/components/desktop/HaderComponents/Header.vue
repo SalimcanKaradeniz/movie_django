@@ -1,27 +1,20 @@
 <template>
-    <header class="header-section header-2">
-        <div class="wrap-sticky" style="height: 93px">
-            <nav class="navbar navbar-default bootsnav navbar-sticky on no-full">
-                <div class="container">
-                    <!--search-->
-                    <Search></Search>
-                    <!--logo-->
-                    <Logo></Logo>
-                    <!--navbar-->
-                    <Navbar></Navbar>
-                </div>
-            </nav>
+    <div class="header">
+        <div class="header-main">
+            <!--logo-->
+            <Logo></Logo>
+            <!--navbar-->
+            <Navbar></Navbar>
         </div>
-    </header>
+    </div>
 </template>
 
 <script>
-    import Search from "./HeaderSearch.vue"
-    import Logo from "./HeaderLogo.vue"
+    import Logo from "./Logo.vue"
     import Navbar from "./HeaderNavbar.vue"
     export default {
         name: "Header",
-        components: {Search, Logo, Navbar}
+        components: {Logo, Navbar}
     }
 </script>
 

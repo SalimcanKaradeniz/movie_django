@@ -111,3 +111,4 @@ uploads/
 node_modules/
 package-lock.json
 assets/bundles/
+webpack-stats.json
