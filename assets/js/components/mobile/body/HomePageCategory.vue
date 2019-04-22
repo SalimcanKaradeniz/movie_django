@@ -3,7 +3,7 @@
         <div class="single-row-lomo has-inline-left-gutter lomo-scanned">
             <h2 class="lomo-name row-name">Kategori 1</h2>
             <div class="lomo has-inline-right-gutter">
-                <router-link to="/MovieVideoParent" class="watch-title watch-title-1" v-for="img in images">
+                <router-link to="/MovieVideoParent" class="watch-title watch-title-1" v-for="img in images" :key="img">
                     <div v-bind:style="img.text" class="title-boxart boyut"></div>
                 </router-link>
             </div>

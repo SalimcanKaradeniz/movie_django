@@ -1,1 +1,1 @@
-{"status":"error","error":"ModuleNotFoundError","message":"Module not found: Error: Can't resolve 'vue-carousel' in '/home/oguz/PycharmProjects/movie_django/assets/js/components/desktop/DiscoverComponents'"}
+{"status":"done","chunks":{"desktop":[{"name":"desktop.a01889c97963a6cb669f.js","path":"/home/oguz/PycharmProjects/movie_django/assets/bundles/desktop.a01889c97963a6cb669f.js"}],"mobile":[{"name":"mobile.4dc84689398d7a6a694d.js","path":"/home/oguz/PycharmProjects/movie_django/assets/bundles/mobile.4dc84689398d7a6a694d.js"}]}}

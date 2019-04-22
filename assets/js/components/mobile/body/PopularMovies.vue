@@ -10,7 +10,7 @@
                 <ul id="menu-kategoriler" class="menu">
                     <li id="menu-item-11"
                         class="fa fa-film menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"
-                    v-for="categorys in menukategori">
+                    v-for="categorys in menukategori" :key="categorys">
                         <a href="#">{{categorys.category}}</a>
                     </li>
                 </ul>
