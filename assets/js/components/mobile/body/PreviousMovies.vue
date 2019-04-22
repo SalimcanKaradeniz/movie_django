@@ -23,7 +23,7 @@
 
 <script>
     export default {
-        name: "previousMovies",
+        name: "PreviousMovies",
         data: function () {
             return {
                 previousmovie:

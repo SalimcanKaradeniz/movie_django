@@ -1,15 +1,23 @@
 import Router from 'vue-router';
 import Vue from 'vue';
-import contentBar from './components/mobile/body/contentBar.vue';
+import ContentBar from './components/mobile/body/ContentBar.vue';
+import MovieVideoParent from './components/mobile/movieContent/MovieVideoParent.vue';
 
 Vue.use(Router);
 
 const routes = [
     {
         path: '/',
-        component: contentBar,
+        component: ContentBar,
         meta: {
             title: 'Anasayfa'
+        }
+    },
+    {
+        path: '/MovieVideoParent',
+        component: MovieVideoParent,
+        meta: {
+            title: 'MovieVideoParent'
         }
     },
 ];
