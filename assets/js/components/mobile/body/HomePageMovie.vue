@@ -19,7 +19,7 @@
 
 <script>
     export default {
-        name: "homepageMovie"
+        name: "HomePageMovie"
     }
 </script>
 
