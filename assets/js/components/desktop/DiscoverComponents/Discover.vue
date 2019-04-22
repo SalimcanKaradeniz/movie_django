@@ -23,14 +23,14 @@
         <div class="discover-container">
             <div class="discover-row">
                 <div class="category-name">
-                    <span class="category-text">Aksiyon</span>
+                    <span class="category-text">Komedi</span>
                     <span class="hide-next">Tümünü Gör</span>
                 </div>
                 <carousel :perPage="5" :navigationEnabled="true" :paginationEnabled="false">
                     <slide v-for="i in 10" :key="i">
                         <img class="filmimg"
                              src="https://womentainment.com/wp-content/uploads/2019/01/sex-education-netflix-review.jpg"
-                             alt="">
+                             alt="" @click="film_click">
                         <div class="filmimg-container">
                             <div class="discover-detail-top">
                                 <div class="discover-icon">
@@ -173,6 +173,9 @@
             category_filter: function (category) {
                 this.selected_category = category;
                 this.category_toggle = false;
+            },
+            film_click: function () {
+                this.$router.push({path: '/filmpage'})
             }
         }
     }
